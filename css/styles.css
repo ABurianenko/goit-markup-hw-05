@@ -822,6 +822,10 @@ label {
     display: flex;
 }
 
+span.checkbox {
+    display: inline-flex;
+}
+
 .checkbox {
     width: 16px;
     height: 16px;
@@ -837,7 +841,6 @@ label {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     position: relative;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
 
