@@ -765,15 +765,13 @@ label {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:hover .form-input,
-.input:focus .form-input {
-    border-color: var(--primary-brand);
-}
+ .form-input:focus {
+     border-color: var(--primary-brand);
+ }
 
-.input:hover .form-icon,
-.input:focus .form-icon {
-    fill: var(--primary-brand);
-}
+ .form-input:focus+.form-icon {
+     fill: var(--primary-brand);
+ }
 
 .comment {
     width: 100%;
@@ -820,6 +818,8 @@ label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+
+    display: flex;
 }
 
 .checkbox {
@@ -851,7 +851,7 @@ label {
     transform: translate(-50%, -50%);
 }
 
-.input-check:checked .checkbox {
+.input-check:checked + .form-agreement .checkbox {
     background-color: var(--pressed-state);
     border: none;
     fill: var(--light);
